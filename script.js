@@ -8,7 +8,7 @@ prvni.addEventListener('click', function(){
 const druhy = document.getElementById('druhy')
 
 druhy.addEventListener('click', function(){
-    druhy.textContent = "Změnila barva";
+    druhy.textContent = "Změnila se barva";
     
 
 })
