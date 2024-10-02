@@ -1,14 +1,14 @@
-let first = document.getElementById('first')
+let prvni = document.getElementById('prvni')
 
-first.addEventListener('click', function(){
-    alert("Alert.")
+prvni.addEventListener('click', function(){
+    alert("Vyskočil Alert!")
 
 })
 
-const second_button = document.getElementById('second')
+const druhy = document.getElementById('druhy')
 
-second_button.addEventListener('click', function(){
-    second_button.textContent = "Změnila se barvicka";
+druhy.addEventListener('click', function(){
+    druhy.textContent = "Změna barvy";
     
 
 })
