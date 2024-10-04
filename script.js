@@ -15,5 +15,5 @@ druhy.addEventListener('click', function(){
     
 function hellouser(){
         let user = document.getElementById('user').value; 
-        alert("Vítam",+ user);
+        alert("Vítam ",+ user);
     }
