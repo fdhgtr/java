@@ -12,7 +12,14 @@ druhy.addEventListener('click', function(){
     
 
 })
-    
+
+document.getElementById('changeTextButton').addEventListener('click', function() {
+    const newText = prompt('Zadejte nový text pro H1:');
+    if (newText) {
+        document.getElementById('headerText').textContent = newText;
+    }
+});
+
 function hellouser(){
         let user = document.getElementById('user').value; 
         alert('Vítam ' + user);
