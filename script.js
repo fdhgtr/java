@@ -17,7 +17,6 @@ document.getElementById("button").onclick = function() {
     document.getElementById("text").innerText = "Text byl změněn!";
 };
 
-function hellouser(){
-        let user = document.getElementById('user').value; 
-        alert('Vítam ' + user);
-    }
+document.getElementById("button").addEventListener("click", function() {
+    document.getElementById("text").innerText = "Text byl změněn!";
+});
