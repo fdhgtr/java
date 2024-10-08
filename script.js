@@ -13,7 +13,9 @@ druhy.addEventListener('click', function(){
 
 })
 
-
+document.getElementById("button").onclick = function() {
+    document.getElementById("text").innerText = "Text byl změněn!";
+};
 
 function hellouser(){
         let user = document.getElementById('user').value; 
