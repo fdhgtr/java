@@ -13,9 +13,6 @@ druhy.addEventListener('click', function(){
 
 })
 
-document.getElementById("button").onclick = function() {
-    document.getElementById("text").innerText = "Text byl změněn!";
-};
 
 document.getElementById("button").addEventListener("click", function() {
     document.getElementById("text").innerText = "Text byl změněn!";
