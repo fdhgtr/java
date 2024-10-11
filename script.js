@@ -2,14 +2,14 @@
 let prvni = document.getElementById('prvni')
 
 prvni.addEventListener('click', function(){
-    alert("Vyskočil Alert!")
+    alert("Alert!")
 
 })
 
 const druhy = document.getElementById('druhy')
 
 druhy.addEventListener('click', function(){
-    druhy.textContent = "Změnil se text";
+    druhy.textContent = "Text se změnil";
     
 
 })
@@ -21,24 +21,43 @@ function zmenText() {
 
 
 function zapisText() {
-    document.getElementById("novyText").innerText = "Toto je nový text!";
+    document.getElementById("novytext").innerText = "Toto je nový text!";
 }
     
 function hellouser() {
-    const userName = document.getElementById('user').value;
-    if (userName) {
-        alert('Ahoj, ' + userName + '!');
+    const user = document.getElementById('user').value;
+    if (user) {
+        alert('Ahoj, ' + user + '!');
     } else {
-        alert('Prosím, zadejte své jméno.');
+        alert('Prosím, zadej své jméno.');
     }
 }
 
 function changeHeadingText() {
-    document.getElementById('heading').textContent = 'Text úkolu se změnil!';
+    document.getElementById('heading').textContent = 'Text se změnil!';
 }
 
 function resetHeadingText() {
     document.getElementById('heading').textContent = 'Úkol 7';
 }
+document.addEventListener('DOMContentLoaded', function() {
+    let cas = document.getElementById('cas');
+    let datum = document.getElementById('datum');
+
+    const cass = document.getElementById('cass');
+    const datumm = document.getElementById('datumm');
+
+    cas.addEventListener('click', function(){
+        const acas = new Date();
+        const scas = acas.toLocaleTimeString();
+        cass.textContent = 'Momentalni cas: ' + scas;
+    })
+
+    datum.addEventListener('click', function(){
+        const adatum = new Date();
+        const sdatum = adatum.toLocaleDateString();
+        datumm.textContent = 'Momentalni datum: ' + sdatum;
+    })
+});
 
       
