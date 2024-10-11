@@ -13,7 +13,14 @@ druhy.addEventListener('click', function(){
 
 })
 
+function zmenText() {
+    document.getElementById("text").innerText = "Text byl změněn!";
+}
 
 
+
+function zapisText() {
+    document.getElementById("novyText").innerText = "Toto je nový text!";
+}
     
         
